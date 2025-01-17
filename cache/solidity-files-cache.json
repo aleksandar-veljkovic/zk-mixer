@@ -1,0 +1,228 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "D:\\Playground\\blankHardhat\\contracts\\Constants.sol": {
+      "lastModificationDate": 1737068319721,
+      "contentHash": "ee6f625044dc2ef0fca23eb4427f45d7",
+      "sourceName": "contracts/Constants.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": []
+    },
+    "D:\\Playground\\blankHardhat\\contracts\\InternalLeanIMT.sol": {
+      "lastModificationDate": 1737068413867,
+      "contentHash": "3f137509151747968a2c89fdb96cabd0",
+      "sourceName": "contracts/InternalLeanIMT.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "poseidon-solidity/PoseidonT3.sol",
+        "./Constants.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "InternalLeanIMT"
+      ]
+    },
+    "D:\\Playground\\blankHardhat\\node_modules\\poseidon-solidity\\PoseidonT3.sol": {
+      "lastModificationDate": 1737068392515,
+      "contentHash": "88a3db6023abdf06f44823c05f81f69e",
+      "sourceName": "poseidon-solidity/PoseidonT3.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0"
+      ],
+      "artifacts": [
+        "PoseidonT3"
+      ]
+    },
+    "D:\\Playground\\blankHardhat\\contracts\\LeanIMT.sol": {
+      "lastModificationDate": 1737068343857,
+      "contentHash": "f914dd7c3065b5471fc0c00df66b9fa9",
+      "sourceName": "contracts/LeanIMT.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./InternalLeanIMT.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "LeanIMT"
+      ]
+    },
+    "D:\\Playground\\blankHardhat\\contracts\\Mixer.sol": {
+      "lastModificationDate": 1737068398339,
+      "contentHash": "381710055cf1c929d7ac179f6b2ec954",
+      "sourceName": "contracts/Mixer.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./LeanIMT.sol",
+        "poseidon-solidity/PoseidonT3.sol",
+        "./Verifier.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Mixer"
+      ]
+    },
+    "D:\\Playground\\blankHardhat\\contracts\\Verifier.sol": {
+      "lastModificationDate": 1737068378002,
+      "contentHash": "b3bd764775c5e01c0079b7107abb3f8c",
+      "sourceName": "contracts/Verifier.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "Groth16Verifier"
+      ]
+    }
+  }
+}
